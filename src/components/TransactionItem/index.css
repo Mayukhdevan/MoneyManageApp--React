@@ -1,0 +1,28 @@
+.transaction-history-item {
+  border-bottom: 1.4px solid #cbd5e1;
+  border-top: none;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 0.6rem;
+}
+.transaction-history-item p {
+  width: 3.5rem;
+  flex-grow: 1;
+  font-size: .8rem;
+  font-weight: 500;
+  color: #7e858e;
+}
+.transaction-history-item p:nth-child(3) {
+  flex-grow: 2;
+}
+.delete-btn {
+  position: absolute;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  right: 0.5rem;
+}
+.transaction-history-item button img {
+  width: 20px;
+}

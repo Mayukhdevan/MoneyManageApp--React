@@ -1,0 +1,145 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto';
+}
+
+.bg-container {
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+}
+.main-wrapper {
+  min-height: 100vh;
+  width: 100%;
+  max-width: 1024px;
+  display: flex;
+  flex-direction: column;
+}
+.header {
+  margin-top: 5%;
+  background-image: url('https://assets.ccbp.in/frontend/react-js/money-manager/money-manager-bg.png');
+  background-size: cover;
+  padding: 3rem;
+  border-radius: 29px;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.user-heading {
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  color: #475569;
+}
+.user-para {
+  color: #475569;
+  font-size: 1rem;
+  font-weight: 500;
+}
+.blue-text {
+  color: #0b69ff;
+  margin-left: 0.3rem;
+}
+.money-details-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.1rem;
+  margin-bottom: 2.5rem;
+}
+form,
+.transactions-container {
+  border: 1.4px solid #cbd5e1;
+  border-radius: 15px;
+  margin-bottom: 2rem;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  padding: 3rem 1.5rem;
+}
+.transaction-heading,
+.history-text {
+  font-size: 1.1rem;
+  color: #475569;
+  margin-bottom: 1.5rem;
+}
+label {
+  color: #7e858e;
+  font-size: 0.8rem;
+  margin-bottom: 0.7rem;
+  font-weight: 500;
+}
+input,
+.types-select {
+  padding: 0.8rem 0.7rem;
+  margin-bottom: 1.5rem;
+  outline: none;
+  border: 1px solid #cbd5e1;
+  border-radius: 3px;
+}
+button {
+  cursor: pointer;
+}
+.add-btn {
+  align-self: flex-start;
+  padding: 0.7rem 1.6rem;
+  font-weight: 500;
+  font-size: 1.1rem;
+  border: none;
+  outline: none;
+  background-color: #0b69ff;
+  color: white;
+  border-radius: 7px;
+}
+.transactions-container {
+  padding: 1.5rem;
+}
+.transactions {
+  border: 1.4px solid #cbd5e1;
+  border-bottom: none;
+}
+.transaction-headers {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 1rem 0.6rem;
+  border-bottom: 1.4px solid #cbd5e1;
+}
+.transaction-headers p {
+  width: 3.5rem;
+  font-weight: 500;
+  font-size: 0.9rem;
+  flex-grow: 1;
+}
+.transaction-headers p:nth-child(3) {
+  flex-grow: 2;
+}
+.transaction-items-container {
+  list-style: none;
+  position: relative;
+}
+
+@media (min-width: 768px) {
+  .bg-container {
+    padding: 1rem;
+  }
+  .header {
+    text-align: start;
+  }
+  .money-details-container {
+    flex-direction: row;
+    gap: 3rem;
+  }
+  .bottom-section-wrapper {
+    display: flex;
+    gap: 2rem;
+  }
+  form {
+    flex-grow: 0.75;
+    padding: 3.5rem;
+  }
+  .transactions-container {
+    flex-grow: 1.25;
+    padding: 3.5rem 3rem;
+  }
+}
