@@ -104,7 +104,7 @@ class MoneyManager extends Component {
             </p>
           </div>
 
-          <ul className="money-details-container">
+          <div className="money-details-container">
             {[
               <MoneyDetails
                 amount={getTotalIncome - getTotalExpenses}
@@ -128,7 +128,7 @@ class MoneyManager extends Component {
                 dataTestId="expensesAmount"
               />,
             ]}
-          </ul>
+          </div>
 
           <div className="bottom-section-wrapper">
             <form onSubmit={this.addTransaction}>
